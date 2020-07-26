@@ -164,9 +164,10 @@ pre {
 figure {
   margin: 0 0 1rem; }
 
-img {
+/*img {
   vertical-align: middle;
-  border-style: none; }
+  border-style: none; 
+}*/
 
 svg {
   overflow: hidden;
@@ -8933,7 +8934,8 @@ h1, h2, h3, h4, h5,
 
 .project {
   width: 100%;
-  height: 350px;
+  min-height: 400px;
+  height: auto;
   margin-bottom: 0;
   position: relative;
   z-index: 0; }
@@ -9659,6 +9661,28 @@ textarea.form-control {
     -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
     box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
   }
+.img1{
+  background-image: url("../images/work-1.jpg");
+  background-size: auto 100%;
+}
+.img2{
+  background-image: url("../images/work-2.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img3{
+  background-image: url("../images/work-3.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img4{
+  background-image: url("../images/work-4.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
   
   /* Small devices (tablets, 768px and up) */
   @media (min-width: 768px) {
@@ -9671,8 +9695,43 @@ textarea.form-control {
   }
   @media screen and (max-width: 767px){
   .text{
-    color: #343a40 !important;
-  } 
+    color: #06121f !important;}
+  .img1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(256,256,256,0.5);
+  }
+  .img2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(256,256,256,0.5);
+  }
+  .img3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(256,256,256,0.5);
+  }
+  .img4::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(256,256,256,0.5);
+  }
   }
 @-webkit-keyframes loader-rotate {
   100% {
